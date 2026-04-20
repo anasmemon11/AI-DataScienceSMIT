@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Face Recognition</title>
+</head>
+
+<body>
+
+<h2>Upload Image</h2>
+
+<form method="POST" enctype="multipart/form-data">
+<input type="file" name="image">
+<input type="submit">
+</form>
+
+{% if label %}
+
+<h3>Predicted Person: {{label}}</h3>
+<img src="/static/upload.jpg" width="200">
+
+{% endif %}
+
+</body>
+</html>
